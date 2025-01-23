@@ -57,7 +57,13 @@ for (const index in squadreCalcio) {
 let elemento = squadreCalcio[index]
 elemento.punti = numRandom(1, 50) 
 elemento.falliSubiti = numRandom(1, 50)
+
+newArray.push(
+    {
+    nome: elemento ["nome"],
+    falliSubiti: elemento["falliSubiti"]
+    })
 }
 
-console.log(squadreCalcio )
+console.log(squadreCalcio, newArray)
 
